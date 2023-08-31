@@ -12,6 +12,7 @@
  
 > 🧨 Your job is to attack the Dice Game contract!  You will create a new contract that will predict the randomness ahead of time and only roll the dice when you're guaranteed to be a winner!
 
+<img width="1425" alt="image" src="https://github.com/Solidityarchitect/dice-game/assets/125990317/b2756385-3617-4587-8222-4b8a931810f6">
 
 RiggedRoll Contract
 CODE: https://sepolia.etherscan.io/address/0x57A8545F20Af86Df45393c1Bcc74fa1799503B71#code
