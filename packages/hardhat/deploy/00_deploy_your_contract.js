@@ -1,5 +1,7 @@
 
 const { ethers } = require("hardhat");
+require("dotenv").config()
+const { verify } = require("../utils/verify")
 
 const localChainId = "31337";
 
@@ -18,6 +20,9 @@ module.exports = async ({ getNamedAccounts, deployments, getChainId }) => {
   // Getting a previously deployed contract
   const DiceGame = await ethers.getContract("DiceGame", deployer);
 
+  if (chainId === 11155111 && process.env.ETHERSCAN_API_KEY) {
+    await verify(DiceGame.address, [])
+}
 
 };
 module.exports.tags = ["DiceGame"];
